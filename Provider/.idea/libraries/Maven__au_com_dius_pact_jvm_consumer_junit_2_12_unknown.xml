@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: au.com.dius:pact-jvm-consumer-junit_2.12:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/au/com/dius/pact-jvm-consumer-junit_2.12/unknown/pact-jvm-consumer-junit_2.12-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/au/com/dius/pact-jvm-consumer-junit_2.12/unknown/pact-jvm-consumer-junit_2.12-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/au/com/dius/pact-jvm-consumer-junit_2.12/unknown/pact-jvm-consumer-junit_2.12-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

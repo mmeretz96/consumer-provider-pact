@@ -1,0 +1,35 @@
+{
+    "provider": {
+        "name": "value-provider"
+    },
+    "consumer": {
+        "name": "value-consumer"
+    },
+    "interactions": [
+        {
+            "description": "ConsumerTest interaction",
+            "request": {
+                "method": "GET",
+                "path": "/square"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": "1.0"
+                }
+            },
+            "providerState": "test first state"
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "2.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.3.3"
+        }
+    }
+}
