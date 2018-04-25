@@ -59,7 +59,7 @@
                                 <consumer>
                                     <name>value-consumer</name>
                                     <!--  currently supports a file path using pactFile or a URL using pactUrl -->
-                                    <pactFile>C:\Dev\SpringUebungen\Consumer\target\pacts\value-consumer-value-provider.json</pactFile>
+                                    <pactFile>C:\Dev\SpringUebungen\Provider\target\pacts\value-consumer-value-provider.json</pactFile>
                                 </consumer>
                             </consumers>
                         </serviceProvider>

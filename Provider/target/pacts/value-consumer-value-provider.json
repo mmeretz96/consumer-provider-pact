@@ -9,6 +9,24 @@
         {
             "description": "ConsumerTest interaction",
             "request": {
+                "method": "POST",
+                "path": "/square",
+                "query": "input=5"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 25.0
+                }
+            },
+            "providerState": "test first state"
+        },
+        {
+            "description": "ConsumerTest interaction 2",
+            "request": {
                 "method": "GET",
                 "path": "/square"
             },
@@ -18,10 +36,10 @@
                     "Content-Type": "application/json;charset=UTF-8"
                 },
                 "body": {
-                    "value": "1.0"
+                    "value": 25.0
                 }
             },
-            "providerState": "test first state"
+            "providerState": "test second state"
         }
     ],
     "metadata": {
