@@ -43,7 +43,7 @@
             <plugin>
                 <groupId>au.com.dius</groupId>
                 <artifactId>pact-jvm-provider-maven_2.12</artifactId>
-                <version>3.5.11</version>
+                <version>3.5.14</version>
                 <configuration>
                     <serviceProviders>
                         <!-- You can define as many as you need, but each must have a unique name -->
@@ -59,7 +59,7 @@
                                 <consumer>
                                     <name>value-consumer</name>
                                     <!--  currently supports a file path using pactFile or a URL using pactUrl -->
-                                    <pactFile>C:\Dev\SpringUebungen\Provider\target\pacts\value-consumer-value-provider.json</pactFile>
+                                    <pactFile>C:\Dev\SpringUebungen\Provider\src\test\resources\value-consumer-value-provider.json</pactFile>
                                 </consumer>
                             </consumers>
                         </serviceProvider>

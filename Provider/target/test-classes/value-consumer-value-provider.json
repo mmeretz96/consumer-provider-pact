@@ -1,0 +1,293 @@
+{
+    "provider": {
+        "name": "value-provider"
+    },
+    "consumer": {
+        "name": "value-consumer"
+    },
+    "interactions": [
+        {
+            "description": "Post request interaction",
+            "request": {
+                "method": "POST",
+                "path": "/square",
+                "query": {
+                    "input": [
+                        "5"
+                    ]
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 25.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "1"
+                }
+            ]
+        },
+        {
+            "description": "square a number",
+            "request": {
+                "method": "POST",
+                "path": "/square",
+                "query": {
+                    "input": [
+                        "5"
+                    ]
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 25.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "1"
+                }
+            ]
+        },
+        {
+            "description": "z Get reuqest interaction to get the last calculated result",
+            "request": {
+                "method": "GET",
+                "path": "/square"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 25.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "1"
+                }
+            ]
+        },
+        {
+            "description": "Post request interaction",
+            "request": {
+                "method": "POST",
+                "path": "/add",
+                "query": {
+                    "input": [
+                        "5"
+                    ],
+                    "input2": [
+                        "10"
+                    ]
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 15.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "2"
+                }
+            ]
+        },
+        {
+            "description": "add two numbers",
+            "request": {
+                "method": "POST",
+                "path": "/add",
+                "query": {
+                    "input": [
+                        "5"
+                    ],
+                    "input2": [
+                        "10"
+                    ]
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 15.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "2"
+                }
+            ]
+        },
+        {
+            "description": "Post request interaction",
+            "request": {
+                "method": "POST",
+                "path": "/square",
+                "query": {
+                    "input": [
+                        "5"
+                    ]
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 25.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "3"
+                }
+            ]
+        },
+        {
+            "description": "get last result",
+            "request": {
+                "method": "GET",
+                "path": "/square"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 25.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "3"
+                }
+            ]
+        },
+        {
+            "description": "z Get reuqest interaction to get the last calculated result",
+            "request": {
+                "method": "GET",
+                "path": "/square"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 25.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "3"
+                }
+            ]
+        },
+        {
+            "description": "Post request interaction",
+            "request": {
+                "method": "POST",
+                "path": "/add",
+                "query": {
+                    "input": [
+                        "5"
+                    ],
+                    "input2": [
+                        "10"
+                    ]
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 15.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "test post request on /add for input 5 and 10"
+                }
+            ]
+        },
+        {
+            "description": "Post request interaction",
+            "request": {
+                "method": "POST",
+                "path": "/square",
+                "query": {
+                    "input": [
+                        "5"
+                    ]
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 25.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "test post request on /square for input 5"
+                }
+            ]
+        },
+        {
+            "description": "z Get reuqest interaction to get the last calculated result",
+            "request": {
+                "method": "GET",
+                "path": "/square"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 25.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "z get request with empty body"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.14"
+        }
+    }
+}
