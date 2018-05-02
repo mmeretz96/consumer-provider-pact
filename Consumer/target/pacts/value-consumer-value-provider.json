@@ -1,0 +1,94 @@
+{
+    "provider": {
+        "name": "value-provider"
+    },
+    "consumer": {
+        "name": "value-consumer"
+    },
+    "interactions": [
+        {
+            "description": "square a number",
+            "request": {
+                "method": "POST",
+                "path": "/square",
+                "query": {
+                    "input": [
+                        "5"
+                    ]
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 25.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "1"
+                }
+            ]
+        },
+        {
+            "description": "add two numbers",
+            "request": {
+                "method": "POST",
+                "path": "/add",
+                "query": {
+                    "input": [
+                        "5"
+                    ],
+                    "input2": [
+                        "10"
+                    ]
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 15.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "2"
+                }
+            ]
+        },
+        {
+            "description": "get last result",
+            "request": {
+                "method": "GET",
+                "path": "/square"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "value": 25.0
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "3"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.14"
+        }
+    }
+}

@@ -28,7 +28,7 @@ public class ConsumerTest{
             Map<String, String> headers = new HashMap<>();
             headers.put("Content-Type", "application/json;charset=UTF-8");
             return builder
-                    .given("1")
+                    .given("state 1")
                     .uponReceiving("square a number")
                     .path("/square")
                     .query("input=5")
@@ -47,7 +47,7 @@ public class ConsumerTest{
             Map<String, String> headers = new HashMap<>();
             headers.put("Content-Type", "application/json;charset=UTF-8");
             return builder
-                    .given("2")
+                    .given("state 2")
                     .uponReceiving("add two numbers")
                     .path("/add")
                     .query("input=5&input2=10")
@@ -66,7 +66,7 @@ public class ConsumerTest{
                 Map<String, String> headers = new HashMap<>();
                 headers.put("Content-Type", "application/json;charset=UTF-8");
                 return builder
-                        .given("3")
+                        .given("state 3")
                         .uponReceiving("get last result")
                         .path("/square")
                         .method("GET")
@@ -109,9 +109,7 @@ public class ConsumerTest{
             ValueRestFetcher valueRestFetcher = new ValueRestFetcher();
             Value value = valueRestFetcher.fetchValueInfo(valueInfoUri);
 
-            Map expectedResponse = new HashMap();
-            expectedResponse.put("value", 25.0);
-            Assert.assertEquals("{value="+value.getValue()+"}",expectedResponse.toString());
+            assertEquals(25.0,value.getValue());
         }
 }
 

@@ -57,9 +57,9 @@ public class Application {
                     case "3":
                         bodyMap = new LinkedMultiValueMap<>();
                         System.out.println("Welche Zahlen möchten sie Addieren?");
-                        System.out.println("1. ");
+                        System.out.print("1. ");
                         input=s.next();
-                        System.out.println("2. ");
+                        System.out.print("2. ");
                         secondInput=s.next();
                         bodyMap.add("input", input);
                         bodyMap.add("input2", secondInput);
